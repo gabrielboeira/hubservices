@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Financiamento Veicular</title>
+    <link rel="stylesheet" href="/styles/veicular.css">
+    <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Financiamento Veicular</h1>
+    </header>
+
+    <section>
+        <label for="valorBem">Valor do bem (R$):</label>
+        <input type="number" id="valorBem">
+        
+        <label for="prazoFin">Prazo (meses):</label>
+        <input type="number" id="prazoFin">
+        
+        <label for="taxaJuros">Taxa de juros (% ao mês):</label>
+        <input type="number" id="taxaJuros" step="0.01">
+        
+        <button onclick="calcularFinanciamentoVeicular()">Calcular</button>
+        
+        <p id="resultadoFinanciamento"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gabriel Boeira</p>
+    </footer>
+
+    <script src="/scripts/script-veicular.js"></script>
+</body>
+</html>

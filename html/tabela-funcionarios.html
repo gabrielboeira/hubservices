@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Funcionários</title>
+    <link rel="stylesheet" href="/styles/funcionarios.css">
+    <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Funcionários</h1>
+    </header>
+
+    <section>
+        <label for="nomeFunc">Nome:</label>
+        <input type="text" id="nomeFunc">
+        
+        <label for="salarioBase">Salário Base (R$):</label>
+        <input type="number" id="salarioBase" step="0.01">
+        
+        <label for="horasExtras">Horas Extras:</label>
+        <input type="number" id="horasExtras">
+        
+        <label for="insalubridade">Insalubridade (%):</label>
+        <input type="number" id="insalubridade" step="0.01">
+        
+        <label for="periculosidade">Periculosidade (%):</label>
+        <input type="number" id="periculosidade" step="0.01">
+        
+        <label for="deducaoInss">Dedução INSS (R$):</label>
+        <input type="number" id="deducaoInss" step="0.01">
+        
+        <label for="deducaoIrpf">Dedução IRPF (R$):</label>
+        <input type="number" id="deducaoIrpf" step="0.01">
+        
+        <label for="deducaoVt">Dedução VT (R$):</label>
+        <input type="number" id="deducaoVt" step="0.01">
+        
+        <button onclick="adicionarFuncionario()">Adicionar Funcionário</button>
+        
+        <table id="tabelaFuncionarios">
+            <tr>
+                <th>Nome</th>
+                <th>Salário Base</th>
+                <th>HE</th>
+                <th>Insalubridade</th>
+                <th>Periculosidade</th>
+                <th>INSS</th>
+                <th>IRPF</th>
+                <th>VT</th>
+                <th>Total</th>
+            </tr>
+        </table>
+        
+        <p id="resultadoFuncionario"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gabriel Boeira</p>
+    </footer>
+
+    <script src="/scripts/script-funcionarios.js"></script>
+</body>
+</html>

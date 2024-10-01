@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Empresas</title>
+    <link rel="stylesheet" href="/styles/cadastro.css">
+    <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Empresas</h1>
+    </header>
+
+    <section>
+        <label for="nomeEmpresa">Nome da Empresa:</label>
+        <input type="text" id="nomeEmpresa">
+        
+        <label for="siteEmpresa">Site da Empresa:</label>
+        <input type="text" id="siteEmpresa">
+        
+        <label for="instagramEmpresa">Instagram da Empresa:</label>
+        <input type="text" id="instagramEmpresa">
+        
+        <button onclick="adicionarEmpresa()">Adicionar Empresa</button>
+        
+        <table id="tabelaEmpresas">
+            <tr>
+                <th>Nome</th>
+                <th>Site</th>
+                <th>Instagram</th>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gabriel Boeira</p>
+    </footer>
+
+    <script src="/scripts/script-empresas.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Rendimento SELIC</title>
+    <link rel="stylesheet" href="/styles/selic.css">
+    <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Rendimento SELIC</h1>
+    </header>
+
+    <section>
+        <label for="valor">Valor investido (R$):</label>
+        <input type="number" id="valor">
+        
+        <label for="prazo">Prazo (em meses):</label>
+        <input type="number" id="prazo">
+        
+        <label for="selic">Taxa SELIC atual (%):</label>
+        <input type="number" id="selic" step="0.01">
+        
+        <button onclick="calcularRendimentoSELIC()">Calcular</button>
+        
+        <p id="resultadoSELIC"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gabriel Boeira</p>
+    </footer>
+
+    <script src="/scripts/script-selic.js"></script>
+</body>
+</html>
