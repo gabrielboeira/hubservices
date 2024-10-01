@@ -3,24 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="/styles/login.css">
+    <title>HUB de Soluções</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
 </head>
 <body>
-    <div class="login-container">
-        <h1>Login</h1>
-        <h6>Login: admin<br>Senha: 1234</h6>   
-        <form onsubmit="event.preventDefault(); validarLogin();">
-            <label for="username">Usuário:</label>
-            <input type="text" id="username" name="username" required>
+    <header>
+        <h1>HUB de Soluções</h1>
+            <form action="index.html" method="GET">
+            <button onclick="sair()">Sair</button>
+        <nav>
+            <ul>
+                <li><a href="html/calculadora-imc.html">Calculadora de IMC</a></li>
+                <li><a href="html/calculadora-selic.html">Calculadora de Rendimento SELIC</a></li>
+                <li><a href="html/financiamento-veicular.html">Calculadora de Financiamento Veicular</a></li>
+                <li><a href="html/gerador-dezenas.html">Gerador de Dezenas</a></li>
+                <li><a href="html/tabela-pessoas.html">Tabela de Pessoas (Altura e Peso)</a></li>
+                <li><a href="html/tabela-funcionarios.html">Tabela de Funcionários (Salários)</a></li>
+                <li><a href="html/cadastro-pessoas.html">Cadastro de Pessoas (WhatsApp)</a></li>
+                <li><a href="html/cadastro-empresas.html">Cadastro de Empresas (Site e Instagram)</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <label for="password">Senha:</label>
-            <input type="password" id="password" name="password" required>
+    <footer>
+        <p>&copy; 2024 Gabriel Boeira</p>
+    </footer>
 
-            <button type="submit">Entrar</button>
-        </form>
-    </div>
-
-    <script src="login.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

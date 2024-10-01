@@ -8,7 +8,7 @@ function validarLogin() {
     // Exemplo de validação simples
     if (username === "admin" && password === "1234") {
         // Redireciona para index.html
-        window.location.href = "index.html";
+        window.location.href = "login.html";
     } else {
         alert("Usuário ou senha incorretos!");
     }
